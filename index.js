@@ -3,7 +3,7 @@ const goTop = document.getElementById("goTop");
 const openMenu = document.getElementById("MenuButton");
 const navBar = document.getElementById("navContainer");
 const list = document.getElementById("listContainer");
-let isOpen = true;
+let isOpen = false;
 //To Top Button
 window.addEventListener("scroll", () => {
   window.pageYOffset > 100
@@ -23,7 +23,7 @@ goTop.addEventListener("click", topFunction);
 
 const open = () => {
   isOpen = !isOpen;
-  !isOpen
+  isOpen
     ? (navBar.classList.add("open"), navBar.classList.remove("closed"))
     : (navBar.classList.remove("open"), navBar.classList.add("closed"));
   console.log(isOpen);
@@ -36,10 +36,14 @@ openMenu.addEventListener("click", open);
 navBar.addEventListener("transitionend", closedMenu);
 
 //event delegation
-
+const isClosed = () => {
+  isOpen = false;
+  isOpen === false &&
+    (navBar.classList.remove("open"), navBar.classList.add("closed"));
+};
 list.addEventListener("click", (e) => {
   console.log(e.target.tagName);
-  e.target.tagName === "A" && open();
+  e.target.tagName === "A" && isClosed();
 });
 
 /* Ruber band aeffect over spans */
