@@ -63,3 +63,4 @@ for (let i = 0; i < textE2.length; i++) {
     });
   }
 }
+//Email SENDINg
