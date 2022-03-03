@@ -344,22 +344,35 @@ header {
   text-align: center;
   padding: 8rem 3rem 0rem 3rem;
   position: relative;
+  height: 50%;
 }
 
 .about p {
+  padding-top: 2rem;
   font-size: var(--medium);
-  text-align: left;
+  text-align: center;
+  width: 50%;
+  margin: auto;
+  word-spacing: 4px;
 }
-
+@media screen and (max-width: 2000px) {
+  .about {
+    padding: 8rem 1rem 0rem 1rem;
+    position: relative;
+    height: 30%;
+  }
+}
 @media screen and (max-width: 800px) {
   .about p {
     font-size: var(--small);
+    text-align: left;
+    margin: 10px;
+    width: 100%;
   }
   .about {
-    text-align: center;
-    padding: 5rem 1rem 1rem 1rem;
+    padding: 8rem 1rem 0rem 1rem;
     position: relative;
-    height: fit-content;
+    height: 30%;
   }
 }
 /*horizontal lay out*/
@@ -506,29 +519,30 @@ header {
 
 .imgContainer {
   margin: auto;
-  width: 80%;
-  height: 80%;
+  width: 75%;
+  height: 75%;
   text-align: center;
 }
 .workName {
   font-family: var(--titleFont);
   font-size: var(--medium);
-  margin: 10px;
-  color: var(--colorSecondaryVariation1);
+  margin: 20px 10px;
+  color: var(--colorPrimaryVariation2);
 }
 .projectDescription {
   font-family: var(--textFont);
-  font-size: var(--medium);
+  font-size: var(--small);
   margin: 10px;
-  color: var(--colorSecondaryVariation1);
+  color: var(--colorPrimaryVariation2);
   text-align: left;
+  padding: 2rem 0.5rem;
 }
 .imgFrame {
-  background-color: var(--colorPrimaryVariation1);
+  border: solid var(--colorPrimaryVariation1) 5px;
   width: 100%;
   height: fit-content;
   margin: auto;
-  padding: 1.5rem;
+  border-radius: 0.5rem;
 }
 .projectImg {
   width: 100%;
