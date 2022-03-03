@@ -34,16 +34,18 @@
   box-sizing: border-box;
 }
 html {
-  width: 100%;
   height: 100%;
+  width: 100%;
+
   scroll-behavior: smooth;
 }
 body {
-  width: 100%;
   height: 100%;
+  width: 100%;
   background-color: var(--colorSecondaryVariation1);
   font-family: var(--textFont);
   color: var(--colorPrimaryVariation2);
+  background-color: #f53000;
 }
 /*KEYFRAMES*/
 @keyframes rubber {
@@ -80,7 +82,7 @@ body {
   cursor: pointer;
   text-align: center;
   position: fixed;
-  right: 80px;
+  right: 10px;
   margin: auto;
   border: solid var(--colorPrimaryVariation1) 3px;
   border-radius: 0.5rem;
@@ -88,20 +90,22 @@ body {
   opacity: 0;
   transition: var(--transition2);
 }
-.menuSvg {
+.menuSvgfigure {
   width: 50px;
   height: 50px;
   display: flex;
   padding: 0.5rem;
   align-items: center;
+  justify-content: center;
   margin: auto;
 }
+
 .openMenuButton:hover {
   background-color: var(--colorPrimaryVariation1);
 
   border: solid var(--colorSecondaryVariation1) 3px;
 }
-.openMenuButton:hover .menuSvg svg {
+.openMenuButton:hover .menuSvgfigure svg {
   fill: var(--colorSecondaryVariation1);
 }
 header {
@@ -301,7 +305,7 @@ header {
   position: fixed;
   height: 60px;
   width: 60px;
-  right: 80px;
+  right: 10px;
   bottom: 10px;
   padding: 0.5rem;
   background: var(--colorPrimaryVariation1);
@@ -431,6 +435,7 @@ header {
 }
 .skillsSvg {
   fill: var(--colorPrimary);
+  width: 90%;
 }
 .svgFigure:hover {
   background-color: var(--colorPrimaryVariation1);
