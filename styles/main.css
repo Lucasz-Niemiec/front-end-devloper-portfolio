@@ -45,7 +45,6 @@ body {
   background-color: var(--colorSecondaryVariation1);
   font-family: var(--textFont);
   color: var(--colorPrimaryVariation2);
-  background-color: #f53000;
 }
 /*KEYFRAMES*/
 @keyframes rubber {
