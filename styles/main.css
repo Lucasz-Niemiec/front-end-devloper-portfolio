@@ -798,6 +798,7 @@ textarea:focus {
   transition: var(--transition2);
   opacity: 0.5;
   transform: rotate(45deg);
+  pointer-events: none;
 }
 
 /*conatact info*/
