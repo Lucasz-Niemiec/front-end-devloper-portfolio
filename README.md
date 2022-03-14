@@ -1,4 +1,4 @@
-# front-end-devloper-portfolio
+# Front-End-Devloper-Portfolio
 
 
 this projects is my personal web development portfolio 
